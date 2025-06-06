@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>MCQ-Visualising the Nation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            background-color: #00011f;
+            color: #fdffe3;
+            font-family: verdana;
+        }
+
+        .container {
+            display: flex;
+            padding: 20px;
+            justify-content: center;
+            background-color: #00011f90;
+        }
+
+        h1 {
+            margin-bottom: 60px;
+        }
+
+        .question {
+            font-size: 20px;
+        }
+
+        .options-main .options {
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid #f5deb3;
+            border-radius: 10px;
+            transition: 400ms;
+        }
+
+        #bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            filter: blur(5px);
+        }
+    </style>
+</head>
+
+<body>
+    <img src="5.jpg" id="bg">
+    <div class="container">
+        <div class="child">
+            <u>
+                <h1>Visualising the Nation - MCQ</h1>
+            </u>
+
+            <div class="question">Q1. The allegory of France was represented by:</div><br>
+            <div class="options-main"><i>Options:-</i>
+                <div class="a1 options" onclick="incorrect(this)"> (a) Germania </div>
+                <div class="b1 options" onclick="correct(this)"> (b) Marianne </div>
+                <div class="c1 options" onclick="incorrect(this)"> (c) Liberty </div>
+                <div class="d1 options" onclick="incorrect(this)"> (d) Helvetia </div>
+            </div><br><br>
+
+            <div class="question">Q2. The allegory of Germany was known as:</div><br>
+            <div class="options-main"><i>Options:-</i>
+                <div class="a2 options" onclick="correct(this)"> (a) Germania </div>
+                <div class="b2 options" onclick="incorrect(this)"> (b) Marianne </div>
+                <div class="c2 options" onclick="incorrect(this)"> (c) Liberty </div>
+                <div class="d2 options" onclick="incorrect(this)"> (d) Columbia </div>
+            </div><br><br>
+
+            <div class="question">Q3. Marianne is usually shown wearing a:</div><br>
+            <div class="options-main"><i>Options:-</i>
+                <div class="a3 options" onclick="correct(this)"> (a) Red cap </div>
+                <div class="b3 options" onclick="incorrect(this)"> (b) Crown </div>
+                <div class="c3 options" onclick="incorrect(this)"> (c) Helmet </div>
+                <div class="d3 options" onclick="incorrect(this)"> (d) Veil </div>
+            </div><br><br>
+
+            <div class="question">Q4. Which of the following was NOT used to personify nations?</div><br>
+            <div class="options-main"><i>Options:-</i>
+                <div class="a4 options" onclick="incorrect(this)"> (a) Statues </div>
+                <div class="b4 options" onclick="incorrect(this)"> (b) Paintings </div>
+                <div class="c4 options" onclick="correct(this)"> (c) Maps only </div>
+                <div class="d4 options" onclick="incorrect(this)"> (d) Coins </div>
+            </div><br><br>
+
+            <div class="question">Q5. The broken chains in allegories symbolise:</div><br>
+            <div class="options-main"><i>Options:-</i>
+                <div class="a5 options" onclick="correct(this)"> (a) Freedom </div>
+                <div class="b5 options" onclick="incorrect(this)"> (b) Oppression </div>
+                <div class="c5 options" onclick="incorrect(this)"> (c) War </div>
+                <div class="d5 options" onclick="incorrect(this)"> (d) Monarchy </div>
+            </div><br><br>
+
+            <div class="question">Q6. Which symbol in allegories represents courage?</div><br>
+            <div class="options-main"><i>Options:-</i>
+                <div class="a6 options" onclick="incorrect(this)"> (a) Crown of oak leaves </div>
+                <div class="b6 options" onclick="correct(this)"> (b) Sword </div>
+                <div class="c6 options" onclick="incorrect(this)"> (c) Olive branch </div>
+                <div class="d6 options" onclick="incorrect(this)"> (d) Chain </div>
+            </div><br><br>
+
+            <div class="question">Q7. Germania wears a crown made of:</div><br>
+            <div class="options-main"><i>Options:-</i>
+                <div class="a7 options" onclick="incorrect(this)"> (a) Olive leaves </div>
+                <div class="b7 options" onclick="correct(this)"> (b) Oak leaves </div>
+                <div class="c7 options" onclick="incorrect(this)"> (c) Laurel leaves </div>
+                <div class="d7 options" onclick="incorrect(this)"> (d) Iron </div>
+            </div><br><br>
+
+            <div class="question">Q8. Which symbol represented heroism in allegories?</div><br>
+            <div class="options-main"><i>Options:-</i>
+                <div class="a8 options" onclick="incorrect(this)"> (a) Red cap </div>
+                <div class="b8 options" onclick="correct(this)"> (b) Breastplate with eagle </div>
+                <div class="c8 options" onclick="incorrect(this)"> (c) Olive branch </div>
+                <div class="d8 options" onclick="incorrect(this)"> (d) Flag </div>
+            </div><br><br>
+
+            <div class="question">Q9. The red Phrygian cap symbolises:</div><br>
+            <div class="options-main"><i>Options:-</i>
+                <div class="a9 options" onclick="incorrect(this)"> (a) Power </div>
+                <div class="b9 options" onclick="correct(this)"> (b) Liberty </div>
+                <div class="c9 options" onclick="incorrect(this)"> (c) Heroism </div>
+                <div class="d9 options" onclick="incorrect(this)"> (d) Royalty </div>
+            </div><br><br>
+
+            <div class="question">Q10. Marianne became a national symbol of:</div><br>
+            <div class="options-main"><i>Options:-</i>
+                <div class="a10 options" onclick="correct(this)"> (a) France </div>
+                <div class="b10 options" onclick="incorrect(this)"> (b) Italy </div>
+                <div class="c10 options" onclick="incorrect(this)"> (c) Germany </div>
+                <div class="d10 options" onclick="incorrect(this)"> (d) Austria </div>
+            </div><br><br>
+
+            <div class="question">Q11. Which symbol represents peace?</div><br>
+            <div class="options-main"><i>Options:-</i>
+                <div class="a11 options" onclick="incorrect(this)"> (a) Sword </div>
+                <div class="b11 options" onclick="correct(this)"> (b) Olive branch </div>
+                <div class="c11 options" onclick="incorrect(this)"> (c) Eagle </div>
+                <div class="d11 options" onclick="incorrect(this)"> (d) Broken chains </div>
+            </div><br><br>
+
+            <div class="question">Q12. Germania holds which object in her hand to signify power?</div><br>
+            <div class="options-main"><i>Options:-</i>
+                <div class="a12 options" onclick="correct(this)"> (a) Sword </div>
+                <div class="b12 options" onclick="incorrect(this)"> (b) Olive branch </div>
+                <div class="c12 options" onclick="incorrect(this)"> (c) Red cap </div>
+                <div class="d12 options" onclick="incorrect(this)"> (d) Scroll </div>
+            </div><br><br>
+
+            <div class="question">Q13. The female figure of Germania is often shown with a:</div><br>
+            <div class="options-main"><i>Options:-</i>
+                <div class="a13 options" onclick="correct(this)"> (a) Black, red and gold flag </div>
+                <div class="b13 options" onclick="incorrect(this)"> (b) Blue and white flag </div>
+                <div class="c13 options" onclick="incorrect(this)"> (c) Green and red flag </div>
+                <div class="d13 options" onclick="incorrect(this)"> (d) None of the above </div>
+            </div><br><br>
+
+            <div class="question">Q14. The concept of visualising a nation emerged strongly in:</div><br>
+            <div class="options-main"><i>Options:-</i>
+                <div class="a14 options" onclick="incorrect(this)"> (a) 15th century </div>
+                <div class="b14 options" onclick="correct(this)"> (b) 18th and 19th centuries </div>
+                <div class="c14 options" onclick="incorrect(this)"> (c) 20th century </div>
+                <div class="d14 options" onclick="incorrect(this)"> (d) 16th century </div>
+            </div><br><br>
+
+            <div class="question">Q15. Who created the image of Germania?</div><br>
+            <div class="options-main"><i>Options:-</i>
+                <div class="a15 options" onclick="incorrect(this)"> (a) Otto von Bismarck </div>
+                <div class="b15 options" onclick="correct(this)"> (b) Philipp Veit </div>
+                <div class="c15 options" onclick="incorrect(this)"> (c) Carl Becker </div>
+                <div class="d15 options" onclick="incorrect(this)"> (d) Mazzini </div>
+            </div><br><br>
+
+            <div class="question">Q16. What does the sword in allegorical figures represent?</div><br>
+            <div class="options-main"><i>Options:-</i>
+                <div class="a16 options" onclick="correct(this)"> (a) Readiness to fight </div>
+                <div class="b16 options" onclick="incorrect(this)"> (b) Oppression </div>
+                <div class="c16 options" onclick="incorrect(this)"> (c) Knowledge </div>
+                <div class="d16 options" onclick="incorrect(this)"> (d) Trade </div>
+            </div><br><br>
+
+            <div class="question">Q17. Liberty is often shown with a:</div><br>
+            <div class="options-main"><i>Options:-</i>
+                <div class="a17 options" onclick="incorrect(this)"> (a) Sword </div>
+                <div class="b17 options" onclick="incorrect(this)"> (b) Crown </div>
+                <div class="c17 options" onclick="correct(this)"> (c) Torch of Enlightenment </div>
+                <div class="d17 options" onclick="incorrect(this)"> (d) Helmet </div>
+            </div><br><br>
+
+            <div class="question">Q18. Which quality does the oak crown represent?</div><br>
+            <div class="options-main"><i>Options:-</i>
+                <div class="a18 options" onclick="correct(this)"> (a) Heroism </div>
+                <div class="b18 options" onclick="incorrect(this)"> (b) Freedom </div>
+                <div class="c18 options" onclick="incorrect(this)"> (c) Prosperity </div>
+                <div class="d18 options" onclick="incorrect(this)"> (d) Peace </div>
+            </div><br><br>
+
+            <div class="question">Q19. Visual symbols help in:</div><br>
+            <div class="options-main"><i>Options:-</i>
+                <div class="a19 options" onclick="correct(this)"> (a) Creating a sense of collective identity </div>
+                <div class="b19 options" onclick="incorrect(this)"> (b) Division </div>
+                <div class="c19 options" onclick="incorrect(this)"> (c) Isolation </div>
+                <div class="d19 options" onclick="incorrect(this)"> (d) Rebellion only </div>
+            </div><br><br>
+
+            <div class="question">Q20. What does the breastplate with eagle represent in Germania?</div><br>
+            <div class="options-main"><i>Options:-</i>
+                <div class="a20 options" onclick="incorrect(this)"> (a) Prosperity </div>
+                <div class="b20 options" onclick="correct(this)"> (b) Heroism and Strength </div>
+                <div class="c20 options" onclick="incorrect(this)"> (c) Peace </div>
+                <div class="d20 options" onclick="incorrect(this)"> (d) Revolution </div>
+            </div><br><br>
+
+
+        </div>
+    </div>
+</body>
+
+<script>
+    function correct(element) {
+        element.style.background = "#00440090";
+    }
+
+    function incorrect(element) {
+        element.style.background = "#50000090";
+    }
+</script>
+
+</html>
